@@ -1,0 +1,158 @@
+%==============================================================================
+\documentclass[]{buthesis}
+%==============================================================================
+
+
+%==============================================================================
+% ----------------- DOCUMENT INFORMATION FOR PDF CREATION ---------------------
+\def\Author{Sir Isaac Netwon}
+\def\Title{Differential Equations of the form $^2$H$_{2-x}$O$_x$}
+% ----------------------------
+\def\Year{2022}
+\def\Month{01}
+\def\Day{31}
+% ----------------------------
+\def\Subtitle{}
+\def\Subject{}
+\def\Keywords{Brock University, Physics} % COMMA SEPARATED LIST OF KEY WORDS/PHRASES
+% ----------------------------
+\def\URL{https://www.overleaf.com/read/rhzhgfkfhypy} % SHARE URL TO OVERLEAF PROJECT
+\makepdfa
+%==============================================================================
+
+
+%==============================================================================
+\addbibresource{my_bibliography.bib} %Imports bibliography file
+%==============================================================================
+
+
+%==============================================================================
+\begin{document}
+%==============================================================================
+
+
+%==============================================================================
+% Monograph Format
+% Prefatory pages:
+%==============================================================================
+% Frontispiece or Quote Page (optional)
+%
+\clearpage
+\thispagestyle{empty}
+\begin{quote}
+``To any action there is always an opposite and equal reaction; in other words, the actions of two bodies upon each other are always equal and always opposite in direction.''\\
+---  \emph{The Principia: Mathematical Principles of Natural Philosophy} (1687)
+\end{quote}
+%==============================================================================
+
+
+%==============================================================================
+% Title Page
+%
+\clearpage
+\maketitle
+%==============================================================================
+
+
+%==============================================================================
+% Dedication (optional)
+%
+\clearpage
+\section*{Dedication}
+In a dedication, the student honors the persons involved in the process of writing the thesis paper. It's an act of gratitude to all those persons in your life who have a role in the writing journey.
+
+Dedicated to Isaac Barrow, (b. October 1630, London, England --- d. May 4, 1677, London), English classical scholar, theologian, and mathematician.
+%==============================================================================
+
+
+%==============================================================================
+% Abstract
+%
+\clearpage
+{\setstretch{2.0}
+\section*{Abstract}
+
+The thesis abstract is an essential part of the dissertation paper. It is a summary of a complete work. It gives readers a chance to discover the key points of your dissertation, its research chapter, methodology and results part. Writing a proper abstract is important.
+
+\kant[11]
+}
+%==============================================================================
+
+
+%==============================================================================
+% Preface (optional) 
+%
+\clearpage
+\section*{Preface}
+A preface is an introductory passage written about a book by its author. It lays out why the book exists, its subject matter, and its goals. Prefaces are more commonly found in nonfiction books, but they can also be used in fiction.
+%==============================================================================
+
+
+%==============================================================================
+% Acknowledgement (optional) 
+%
+\clearpage
+\section*{Acknowledgement}
+The acknowledgement for thesis is the section where you thank all people, institutions, and companies that helped you complete the project successfully. It is similar to a dedication, except for the fact that it is formal.
+%==============================================================================
+
+
+%==============================================================================
+% Table of contents
+%
+\clearpage
+\tableofcontents
+%==============================================================================
+
+
+%==============================================================================
+% List of figures (if any)
+%
+\clearpage
+\listoffigures
+%==============================================================================
+
+
+%==============================================================================
+% List of tables (if any)
+%
+\clearpage
+\listoftables
+%==============================================================================
+
+
+%==============================================================================
+% List of Symbols, Nomenclature, or Abbreviations (if any)  
+%
+\clearpage
+\include{list_of_symbols}
+%==============================================================================
+
+
+%==============================================================================
+%
+% Main text
+%
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\nouppercase{\S\leftmark}}
+%==============================================================================
+% 
+\include{introduction}
+%==============================================================================
+% 
+\include{methods}
+%==============================================================================
+%
+\printbibliography[heading=bibnumbered]
+\printbibliography[heading=subbibnumbered,
+                   keyword={physics},
+                   title={Physics-related only}]
+%==============================================================================
+
+
+
+%==============================================================================
+\end{document}
