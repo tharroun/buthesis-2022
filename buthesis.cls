@@ -1,8 +1,11 @@
+%==============================================================================
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{buthesis}[2022/07/11 Brock Document LaTeX class]
+%==============================================================================
+
 
 %==============================================================================
-\RequirePackage{iftex}
+\RequirePackage{iftex} % Provides: \RequireLuaTeX
 \RequireLuaTeX
 %==============================================================================
 
@@ -65,6 +68,9 @@ defernumbers=true,
 biblabel=brackets
 ]{biblatex}
 \RequirePackage{csquotes}
+% -----------------------------------------------------------------------------
+\RequirePackage{etoolbox}
+\newtoggle{use-cc-license}
 %==============================================================================
 
 
@@ -84,7 +90,7 @@ biblabel=brackets
 \RequirePackage{hyperxmp}
 \RequirePackage[pdfa]{hyperref}
 %-------------- CC BY-NC-ND 4.0  ------ ---------------------------------------
-\RequirePackage[type={CC},modifier={by-nc-nd},version={4.0}]{doclicense}
+\RequirePackage[type={CC},modifier={by-sa},version={4.0}]{doclicense}
 %-------------- TIME MUST BE YYYY-MM-DD ---------------------------------------
 \RequirePackage[style=iso]{datetime2}
 %-------------- LINKS AND PDF METADATA ---------------------------------------
@@ -172,7 +178,8 @@ Brock University
 \vspace*{40mm}
 \noindent
 \begin{center}
-\doclicenseThis
+\textcopyright\ \Author\\
+\iftoggle{use-cc-license}{\doclicenseThis}{}
 \end{center}
 }
 %==============================================================================
