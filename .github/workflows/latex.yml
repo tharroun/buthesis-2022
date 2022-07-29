@@ -12,7 +12,7 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
           # The root LaTeX file to be compiled
-          root_file: report.tex
+          root_file: buthesis.tex
 
           # Interpret the root_file input as bash glob pattern
           # glob_root_file: # optional
@@ -55,7 +55,7 @@ jobs:
       run: |
         git config --global user.name "tharroun"
         git config --global user.email "thad.harroun@gmail.com"
-        git add report.pdf
-        git commit -m "commit message"
+        git add buthesis.pdf
+        git commit -m "Github locally compiled"
         git push
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
