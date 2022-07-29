@@ -1,11 +1,14 @@
 %==============================================================================
+% Brock University, Faculty of Graduate Studies 
+% E-Thesis Format Specifications – 11-2021
+% Monograph Format 
 \documentclass[]{buthesis}
 %==============================================================================
 
 
 %==============================================================================
 % ----------------- DOCUMENT INFORMATION FOR PDF CREATION ---------------------
-\def\Author{Sir Isaac Netwon}
+\def\Author{Sir Isaac Newton}
 \def\Title{Differential Equations of the form $^2$H$_{2-x}$O$_x$}
 % ----------------------------
 \def\Year{2022}
@@ -25,7 +28,7 @@
 
 
 %==============================================================================
-\addbibresource{my_bibliography.bib} % Imports bibliography file
+\addbibresource{bibliography.bib} % Imports bibliography file
 %==============================================================================
 
 
@@ -38,7 +41,7 @@
 % Monograph Format
 % Prefatory pages:
 %==============================================================================
-% Frontispiece or Quote Page (optional)
+% Frontispiece or Quote Page (optional); faces the title page
 %
 \clearpage
 \thispagestyle{empty}
@@ -69,7 +72,7 @@ Dedicated to Isaac Barrow, (b. October 1630, London, England --- d. May 4, 1677,
 
 
 %==============================================================================
-% Abstract
+% Abstract (maximum 350 words)
 %
 \clearpage
 {\setstretch{2.0}
@@ -101,7 +104,7 @@ The acknowledgement for thesis is the section where you thank all people, instit
 
 
 %==============================================================================
-% Table of contents
+% Table of contents (listing chapter heads and subheads, bibliographies, and appendices)
 %
 \clearpage
 \tableofcontents
@@ -148,13 +151,20 @@ The acknowledgement for thesis is the section where you thank all people, instit
 % 
 \include{methods}
 %==============================================================================
+% 
+\include{results}
+%==============================================================================
+% 
+\include{conclusion}
+%==============================================================================
 %
 \printbibliography[heading=bibnumbered]
 \printbibliography[heading=subbibnumbered,
                    keyword={physics},
                    title={Physics-related only}]
 %==============================================================================
-
+% 
+\include{appendix}
 
 
 %==============================================================================
