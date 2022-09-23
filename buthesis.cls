@@ -148,7 +148,7 @@ biblabel=brackets
 \begin{titlepage}
     \thispagestyle{empty}
     \begin{textblock}{100}(12,0)
-    \includegraphics[scale=1]{images/BrockUlogo.pdf}
+    \includegraphics[scale=0.25]{images/BrockU_logo.pdf}
     \end{textblock}
     \vfill
 \end{titlepage}
