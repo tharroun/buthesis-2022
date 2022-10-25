@@ -1,6 +1,8 @@
 \section{Introduction}\label{section:introduction}
 
-\kant[1] See for example, eq.~\ref{eq:gauss_law_integral_form}, where this is being calculated.
+\kant[1] 
+
+In this paragraph, we show how you can reference an equation, such as Gauss's Law in integral form shown in Equation~\ref{eq:gauss_law_integral_form}. 
 
 % =======================================================
 \begin{equation}
@@ -9,7 +11,21 @@
 \end{equation}
 % =======================================================
 
-\kant[2] See for example, eq.~\ref{eq:maxwell_faraday_equation_integral_form}, where this is being calculated.
+\kant[2] 
+
+In this paragraph, I am including some numerical results with and without units, inline with the text. Some examples would be; \complexnum{1+-2i} for complex numbers,
+\num{.3e45}~\unit{\kilogram\metre\per\second} for a scientific notation, and 
+\qtylist{0.13;0.67;0.80}{\milli\metre} for a list of answers. Below we show an answer in a math equation environment.
+
+% =======================================================
+\begin{equation}
+\label{eq:numbers_and_units}
+\mathbf{E} = \num{1.2e-12}\ \unit{kg.m.s^{-1}}
+\end{equation}
+% =======================================================
+
+
+The Maxwell/Faraday equation in integral form is shown in equation~\ref{eq:maxwell_faraday_equation_integral_form}
 
 % =======================================================
 \begin{equation}
@@ -18,5 +34,6 @@
 \end{equation}
 % =======================================================
 
-Using \texttt{biblatex} you can display bibliography divided into sections,  depending of citation type. 
-Let's cite! The Einstein's journal paper \cite{einstein} and the Dirac's book \cite{dirac} are physics related items. Next, \textit{The \textsc{latex} Companion} book \cite{latexcompanion}, the Donald Knuth's website \cite{knuthwebsite}, \textit{The Comprehensive Tex Archive Network} (CTAN) \cite{ctan} are \textsc{latex} related items; but the others Donald Knuth's items \cite{knuth-fa,knuth-acp} are dedicated to programming. 
+Using \texttt{biblatex} you can display bibliography divided into sections,  depending of citation type. Let's cite! The Einstein's journal paper \cite{einstein} and the Dirac's book \cite{dirac} are physics related items. Next, \textit{The \textsc{latex} Companion} book \cite{latexcompanion}, the Donald Knuth's website \cite{knuthwebsite}, \textit{The Comprehensive Tex Archive Network} (CTAN) \cite{ctan} are \textsc{latex} related items; but the others Donald Knuth's items \cite{knuth-fa,knuth-acp} are dedicated to programming. 
+
+

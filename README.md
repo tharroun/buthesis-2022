@@ -75,3 +75,6 @@ Keep the Abstract to 350 words max, without graphs, charts, tables, or illustrat
 
 ## Bibliography.
 Default format is square brackets for citation numbers in text, and American Physical Society format. By using biblatex and biber, you have complete freedom to choose other formats, and set up separate sections of the bibliography as you see fit.
+
+## Numbers and units
+This style uses the `siunitix` package. 
