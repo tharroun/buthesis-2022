@@ -1,6 +1,6 @@
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{buthesis}[2022/07/11 Brock Document LaTeX class]
+\ProvidesClass{buthesis}[2022/11/01 Brock Document LaTeX class]
 %==============================================================================
 
 
@@ -51,13 +51,14 @@
 
 %==============================================================================
 \RequirePackage[table]{xcolor}
-\definecolor{BrickRed}{RGB}{182, 32, 28}      % Hyperlinks and table header row
-\definecolor{Gray}{RGB}{91, 103, 112}        % Front page
+\definecolor{BrickRed}{RGB}{182, 32, 28} % Hyperlinks and table header row
+\definecolor{Gray}{RGB}{91, 103, 112}    % Front page
 %==============================================================================
 
 
 %==============================================================================
-\RequirePackage{booktabs}  % 
+\RequirePackage{booktabs}  %
+\RequirePackage{tabularx}
 %==============================================================================
 
 
